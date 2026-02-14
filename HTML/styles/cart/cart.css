@@ -1,0 +1,82 @@
+.coupon-container .coupon {
+  display: flex;
+}
+
+.coupon-container .coupon .input-text {
+  width: 80%;
+}
+
+.coupon-container .coupon .main-button {
+  width: 20%;
+}
+
+.cart-submit-button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cart_totals {
+  width: 100% !important;
+}
+
+.cart_totals td {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.woocommerce-cart-form__cart-item.cart_item .product-name a {
+  color: #000 !important;
+  text-decoration: none;
+}
+
+.woocommerce-cart-form__cart-item.cart_item .product-thumbnail img {
+  width: 150px;
+}
+
+.shop_table th,
+.woocommerce-cart-form thead th {
+  font-weight: 600 !important;
+  font-family: var(--font-belleza);
+  font-size: 20px;
+}
+
+.woocommerce-shipping-totals.shipping td {
+  font-weight: 500 !important;
+}
+
+.cart_totals.calculated_shipping h2 {
+  font-weight: 900 !important;
+  font-family: var(--font-belleza);
+  font-size: 28px;
+}
+
+.coupon {
+  padding: 10px 5px;
+  background: var(--brand-color-3);
+}
+
+.cart-shipping-address {
+  font-weight: 500;
+}
+
+.shipping-calculator-button {
+  color: #000;
+}
+
+.shipping-calculator-button::after {
+  content: "" !important;
+  display: none;
+}
+
+.woocommerce-Price-amount.amount {
+  font-family: var(--font-belleza);
+  font-size: 18px;
+  font-weight: 900 !important;
+}
+
+.woocommerce label {
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+}/*# sourceMappingURL=cart.css.map */

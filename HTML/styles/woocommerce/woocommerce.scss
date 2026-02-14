@@ -1,0 +1,83 @@
+/* Hover effect for buttons */
+.woocommerce a.button:hover,
+.woocommerce button.button:hover,
+.woocommerce input.button:hover,
+.woocommerce #respond input#submit:hover,
+.woocommerce #content input.button:hover,
+.woocommerce-page a.button:hover,
+.woocommerce-page button.button:hover,
+.woocommerce-page input.button:hover,
+.woocommerce-page #respond input#submit:hover,
+.woocommerce-page #content input.button:hover {
+    background-color: #000;
+    color: #fff;
+    border-color: #000;
+}
+
+
+
+/* General WooCommerce button styling */
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button,
+.woocommerce #respond input#submit,
+.woocommerce #content input.button,
+.woocommerce-page a.button,
+.woocommerce-page button.button,
+.woocommerce-page input.button,
+.woocommerce-page #respond input#submit,
+.woocommerce-page #content input.button {    padding-left: 35px !important;
+    padding-right: 35px !important;
+    display: flex;
+	margin-top:0!important;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    height: 30px;
+    background-color: var(--brand-color-2);
+    border: 1px solid var(--brand-color-2);
+    font-size: 16px;
+    font-weight: 300;
+    border-radius: 0px;
+    transition: all 500ms ease;
+    text-decoration: none;
+    color: #fff;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    font-family: var(--font-belleza);
+}
+
+
+
+/* Style checkout form input fields */
+.woocommerce input[type="text"],
+.woocommerce input[type="email"],
+.woocommerce input[type="password"],
+.woocommerce input[type="tel"] {
+    outline: none;
+    font-size: 14px;
+    border: none;
+	height:40px;
+	padding: 10px 10px;
+		border-radius: 5px;
+
+    background-color: var(--brand-color-3);
+}
+/* Style checkout form input fields */
+.woocommerce textarea {
+    outline: none;
+    font-size: 14px;
+    border: none;
+	height:40px;
+	padding: 10px 10px;
+	border-radius: 5px;
+    background-color: var(--brand-color-3);
+}
+
+
+/* BreadCrum styles */
+.breadcrumb-section{
+    background-color:var(--brand-color-3);
+        margin-top: var(--header-height);
+        padding: 20px 0!important;
+    }

@@ -1,0 +1,128 @@
+.woocommerce-MyAccount-navigation {
+  background: var(--brand-color-3);
+  padding: 0px 10px;
+}
+
+.woocommerce-MyAccount-navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.woocommerce-MyAccount-navigation ul li a {
+  color: #000;
+  text-decoration: none;
+  display: flex;
+  height: 100%;
+  padding: 15px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.woocommerce-MyAccount-navigation ul li a:hover {
+  color: var(--brand-color-2);
+}
+
+.u-columns.woocommerce-Addresses.col2-set.addresses {
+  display: flex;
+  flex-direction: column;
+}
+
+.u-column1.col-1.woocommerce-Address {
+  width: 100%;
+  border: 1px dashed grey !important;
+  padding: 15px 15px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+.u-column2.col-2.woocommerce-Address {
+  width: 100%;
+  border: 1px dashed grey !important;
+  padding: 15px 15px;
+}
+
+.woocommerce-Address-title.title a {
+  color: var(--brand-color-2);
+  text-decoration: none;
+}
+
+.woocommerce-Address-title.title h3 {
+  font-weight: 600 !important;
+  font-family: var(--font-belleza);
+  font-size: 27px;
+  text-transform: capitalize;
+}
+
+.woocommerce-MyAccount-content form {
+  padding: 0px 0 50px;
+}
+
+.woocommerce-MyAccount-content form h3 {
+  font-weight: 600 !important;
+  font-family: var(--font-belleza);
+  font-size: 27px;
+  text-transform: capitalize;
+}
+
+.woocommerce-EditAccountForm.edit-account legend {
+  font-weight: 600 !important;
+  font-family: var(--font-belleza);
+  font-size: 22px;
+  text-transform: capitalize;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.woocommerce-MyAccount-content a {
+  color: var(--brand-color-2);
+  text-decoration: none;
+}
+
+.woocommerce-order-details__title {
+  font-weight: 600 !important;
+  font-family: var(--font-belleza);
+  font-size: 28px;
+  text-transform: capitalize;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.woocommerce-column__title {
+  font-weight: 600 !important;
+  font-family: var(--font-belleza);
+  font-size: 28px;
+  text-transform: capitalize;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.woocommerce-order-overview.woocommerce-thankyou-order-details.order_details {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.woocommerce-notice.woocommerce-notice--success.woocommerce-thankyou-order-received {
+  font-weight: 600 !important;
+  font-family: var(--font-belleza);
+  font-size: 28px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.woocommerce-order-details a {
+  color: var(--brand-color-2);
+  text-decoration: none;
+}
+
+.short-order-info {
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.customer_login h2 {
+  font-weight: 500 !important;
+  font-family: var(--font-belleza);
+  font-size: 28px;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}/*# sourceMappingURL=account.css.map */

@@ -1,0 +1,23 @@
+import './HTML/styles/styles.css';
+import './HTML/styles/footer/footer.css';
+import './HTML/styles/header/header.css';
+import './HTML/styles/root/root.css';
+import './HTML/pages/ProductInner/styles.css';
+import './HTML/styles/shop/shop.css';
+import './HTML/styles/woocommerce/woocommerce.css';
+import './HTML/styles/cart/cart.css';
+import './HTML/styles/checkout/checkout.css';
+import './HTML/styles/account/account.css';
+import './HTML/styles/activity/activity.css';
+import './HTML/pages/contact/styles.css';
+import './HTML/pages/about/styles.css';
+
+// import './HTML/js/testimonialswiper';
+import './HTML/js/nav';
+import './HTML/js/galleryswiper';
+import './HTML/js/catswiper';
+// import './HTML/js/custom-add-to-cart';
+import './HTML/js/custom-cart';
+import './HTML/js/custom-wishlist';
+import './HTML/js/filter';
+import './HTML/js/sidebar';
