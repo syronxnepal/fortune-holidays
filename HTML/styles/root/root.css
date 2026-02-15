@@ -11,11 +11,10 @@ body {
 
 :root {
   --header-height: 110px;
-  --brand-color-1: #D72027;
-  --brand-text-color:#D72027;
-  --brand-color-2: #D72027;
+  --brand-color-1: #fd7450;
+  --brand-color-2: #fd7450;
   --brand-light: #edf5f7;
-  --font-light:#999;
+  --font-light: #999;
   --font-hind: "Hind", sans-serif;
   --font-cormorant: "Cormorant", serif;
   --font-poppins: "Poppins", sans-serif;
@@ -298,11 +297,13 @@ p {
   font-family: var(--font-tit);
   letter-spacing: 1.5px;
   font-style: italic;
-  position: relative;
-  display: inline-block;
 }
 .page-top .page-top-desc span {
   color: var(--brand-color-1);
+}
+.page-top .page-top-desc {
+  position: relative;
+  display: inline-block;
 }
 .page-top .page-top-desc::after {
   content: "";

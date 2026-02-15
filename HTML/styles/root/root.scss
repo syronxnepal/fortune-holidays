@@ -12,12 +12,11 @@ body {
 
 :root {
     --header-height: 110px;
-    --brand-color-1: #D72027;
-    --brand-text-color:#D72027;
+    --brand-color-1: #fd7450;
     // --brand-color-1: #FF6600;
-    --brand-color-2: #D72027;
+    --brand-color-2: #fd7450;
     --brand-light: #edf5f7;
-    --font-light:#999;
+    --font-light: #999;
     --font-hind: "Hind", sans-serif;
     --font-cormorant: "Cormorant", serif;
     --font-poppins: "Poppins", sans-serif;
@@ -148,14 +147,14 @@ p {
         font-family: var(--font-playfair);
         text-transform: uppercase;
 
-        &::after{
+        &::after {
             content: "";
             position: absolute;
             height: 5px;
             width: 30%;
             left: 50%;
             bottom: -20px;
-            transform: translate(-50% , 0%);
+            transform: translate(-50%, 0%);
             background-color: var(--brand-color-2);
             border-radius: 5px;
         }
@@ -269,9 +268,11 @@ p {
     letter-spacing: 0.5px;
 
     border-radius: 5px;
-    span{
+
+    span {
         margin-left: 10px;
     }
+
     &:hover {
         background-color: var(--brand-color-2);
         color: #000;
@@ -313,7 +314,8 @@ p {
         border: 1px solid var(--brand-color-2);
 
     }
-    span{
+
+    span {
         margin-left: 10px;
     }
 
@@ -380,9 +382,10 @@ p {
     justify-content: center;
     align-items: center;
     text-align: center;
-    &.full-page-top{
+
+    &.full-page-top {
         height: calc(100vh - var(--header-height));
-        
+
     }
 
     .page-image {
@@ -435,7 +438,7 @@ p {
             font-size: 24px;
         }
 
-        
+
     }
 
     .page-top-desc {
@@ -451,16 +454,18 @@ p {
         span {
             color: var(--brand-color-1);
         }
+
         position: relative;
         display: inline-block;
-        &::after{
+
+        &::after {
             content: "";
             position: absolute;
             height: 5px;
             width: 30%;
             left: 50%;
             bottom: -20px;
-            transform: translate(-50% , 0%);
+            transform: translate(-50%, 0%);
             background-color: var(--brand-color-2);
             border-radius: 5px;
         }
