@@ -89,7 +89,7 @@ button {
         width: 35px;
         height: 35px;
         background: var(--white);
-        color: var(--primary);
+        color: var(--primary-color);
         border-radius: 50%;
         display: flex;
         align-items: center;
@@ -128,7 +128,7 @@ button {
     }
 
     .btn-login {
-        background: var(--primary);
+        background: var(--primary-color);
         color: var(--white);
         padding: 12px 25px;
         border-radius: 50px;
@@ -141,7 +141,7 @@ button {
 
         &:hover {
             background: #4738C8;
-            /* Or darken(var(--primary), 10%) if strictly SCSS */
+            /* Or darken(var(--primary-color), 10%) if strictly SCSS */
             opacity: 0.9;
         }
     }
@@ -200,7 +200,7 @@ button {
             }
 
             .avatar-plus {
-                background: var(--primary);
+                background: var(--primary-color);
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -270,7 +270,7 @@ button {
 }
 
 .btn-pill-search {
-    background: var(--primary);
+    background: var(--primary-color);
     color: var(--white);
     padding: 18px 35px;
     border-radius: 50px;
@@ -292,6 +292,8 @@ button {
     margin-bottom: 50px;
     position: relative;
     text-align: left;
+    align-items: flex-start;
+
 }
 
 .section-center-header {
@@ -300,27 +302,28 @@ button {
 }
 
 .badge-sub {
-    color: var(--primary);
+    color: var(--primary-color);
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 0.85rem;
     margin-bottom: 10px;
     display: block;
+    background-color: #ebe5fa;
+    display: inline-block;
+    padding: 6px 15px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: var(--font-work);
+
 
     &-purple {
         color: #8c52ff;
-        /* Or mix(var(--primary), white, 80%) */
+        /* Or mix(var(--primary-color), white, 80%) */
         @extend .badge-sub;
     }
 }
 
-h2 {
-    font-family: var(--font-head);
-    font-size: 2.8rem;
-    color: var(--dark);
-    line-height: 1.2;
-}
 
 .nav-buttons {
     position: absolute;
@@ -339,11 +342,18 @@ h2 {
         transition: 0.3s;
 
         &:hover {
-            background: var(--primary);
+            background: var(--primary-color);
             color: var(--white);
-            border-color: var(--primary);
+            border-color: var(--primary-color);
         }
     }
+}
+
+.section-destinations {
+    background-image: url('../images/des-bg.png');
+    background-size: cover;
+    background-position: center;
+    // padding: 100px 0;
 }
 
 .destinations-row {
@@ -467,7 +477,7 @@ h2 {
     gap: 30px;
 
     .btn-primary {
-        background: var(--primary);
+        background: var(--primary-color);
         color: var(--white);
         padding: 15px 35px;
         border-radius: 10px;
@@ -583,12 +593,12 @@ h2 {
 
                 strong {
                     font-size: 1.2rem;
-                    color: var(--primary);
+                    color: var(--primary-color);
                 }
             }
 
             .btn-link {
-                color: var(--primary);
+                color: var(--primary-color);
                 font-weight: 500;
                 font-size: 0.9rem;
             }
@@ -626,7 +636,7 @@ h2 {
 
     .btn-white {
         background: var(--white);
-        color: var(--primary);
+        color: var(--primary-color);
         padding: 15px 40px;
         border-radius: 50px;
         font-weight: 700;
@@ -751,7 +761,7 @@ h2 {
         transition: 0.3s;
 
         &:hover {
-            color: var(--primary);
+            color: var(--primary-color);
         }
     }
 }

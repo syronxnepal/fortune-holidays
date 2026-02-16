@@ -5,16 +5,15 @@
 }
 
 body {
-    font-family: var(--font-mons);
+    font-family: var(--font-work);
     font-weight: 400;
 
 }
 
 :root {
     --header-height: 110px;
-    --brand-color-1: #fd7450;
-    // --brand-color-1: #FF6600;
-    --brand-color-2: #fd7450;
+    --primary-color: #fd7450;
+    --secondary-color: #fd7450;
     --brand-light: #edf5f7;
     --font-light: #999;
     --font-hind: "Hind", sans-serif;
@@ -26,6 +25,7 @@ body {
     --font-tit: "Titillium Web", sans-serif;
     --font-bodoni: "Bodoni Moda", serif;
     --font-playfair: "Playfair Display", serif;
+    --font-work: "Work Sans", sans-serif;
 
 
     --para: 14px;
@@ -70,7 +70,7 @@ body {
 
 h1 {
     font-size: var(--extra-heading);
-    font-family: var(--font-tit);
+    font-family: var(--font-playfair);
     color: #000;
 
 }
@@ -78,7 +78,7 @@ h1 {
 h2 {
     font-size: var(--heading);
     color: #000;
-    font-family: var(--font-tit);
+    font-family: var(--font-playfair);
 
 
 }
@@ -86,28 +86,28 @@ h2 {
 h3 {
     font-size: var(--sub-heading);
     color: #000;
-    font-family: var(--font-tit);
+    font-family: var(--font-playfair);
 
 }
 
 h4 {
     font-size: var(--section-heading);
     color: #000;
-    font-family: var(--font-tit);
+    font-family: var(--font-playfair);
 
 
 }
 
 h5 {
     font-size: var(--para-heading);
-    font-family: var(--font-tit);
+    font-family: var(--font-playfair);
 
     color: #000;
 }
 
 p {
     font-size: var(--para);
-    font-family: var(--font-open);
+    font-family: var(--font-work);
     margin-bottom: 0;
     font-weight: 400;
     color: #222;
