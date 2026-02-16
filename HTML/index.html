@@ -24,78 +24,75 @@
 
 <body>
 
-    <!-- Header -->
-    <header class="header">
-        <div class="container header-container">
-            <a href="#" class="logo">
-                <img src="images/logo.png" alt="Fortune Holidays" style="max-height: 50px;">
-            </a>
+    <section class="hero-banner-outer">
+        <!-- Header -->
+        <header class="header hero-header">
+            <div class="container header-container">
+                <a href="#" class="logo">
+                    <img src="images/logo.png" alt="Fortune Holidays" style="max-height: 50px;">
+                </a>
 
-            <nav class="navbar">
-                <ul class="nav-links">
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#">Destinations</a></li>
-                    <li><a href="#">Tours</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
+                <nav class="navbar">
+                    <ul class="nav-links">
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#">Destinations</a></li>
+                        <li><a href="#">Tours</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
 
-            <div class="header-actions">
-                <button class="search-trigger"><i class="fa-solid fa-magnifying-glass"></i></button>
-                <a href="#" class="btn-login">Login / Sign Up <i class="fa-solid fa-arrow-right"></i></a>
+                <div class="header-actions">
+                    <button class="search-trigger"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <a href="#" class="btn-login">Login / Sign Up <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <button class="mobile-toggle"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Where Every Journey <br> Become an Adventure</h1>
+
             </div>
 
-            <button class="mobile-toggle"><i class="fa-solid fa-bars"></i></button>
-        </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">Where Every Journey <br> Become an Adventure</h1>
-            <div class="hero-avatars">
-                <div class="avatar-group">
-                    <img src="https://i.pravatar.cc/100?img=1" alt="User">
-                    <img src="https://i.pravatar.cc/100?img=2" alt="User">
-                    <img src="https://i.pravatar.cc/100?img=3" alt="User">
-                    <div class="avatar-plus">+2k</div>
+            <!-- Pill Search Widget -->
+            <div class="search-pill-container">
+                <div class="search-pill">
+                    <div class="pill-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div class="pill-input">
+                            <label>Location</label>
+                            <input type="text" placeholder="Dream Destination">
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="pill-item">
+                        <i class="fa-regular fa-calendar"></i>
+                        <div class="pill-input">
+                            <label>Date</label>
+                            <input type="text" placeholder="Select Date">
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="pill-item">
+                        <i class="fa-solid fa-user-group"></i>
+                        <div class="pill-input">
+                            <label>People</label>
+                            <select>
+                                <option>1 Person</option>
+                                <option>2 People</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button class="btn-pill-search">Search Now</button>
                 </div>
-                <span>Trusted by 2500+ Travelers</span>
             </div>
-        </div>
-
-        <!-- Pill Search Widget -->
-        <div class="search-pill-container">
-            <div class="search-pill">
-                <div class="pill-item">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <div class="pill-input">
-                        <label>Location</label>
-                        <input type="text" placeholder="Dream Destination">
-                    </div>
-                </div>
-                <div class="divider"></div>
-                <div class="pill-item">
-                    <i class="fa-regular fa-calendar"></i>
-                    <div class="pill-input">
-                        <label>Date</label>
-                        <input type="text" placeholder="Select Date">
-                    </div>
-                </div>
-                <div class="divider"></div>
-                <div class="pill-item">
-                    <i class="fa-solid fa-user-group"></i>
-                    <div class="pill-input">
-                        <label>People</label>
-                        <select>
-                            <option>1 Person</option>
-                            <option>2 People</option>
-                        </select>
-                    </div>
-                </div>
-                <button class="btn-pill-search">Search Now</button>
-            </div>
+        </section>
+        <div class="hero-banner">
+            <img src="./images/hero-banner.jpg" alt="">
         </div>
     </section>
 
