@@ -12,7 +12,8 @@ body {
 :root {
   --header-height: 110px;
   --primary-color: #fd7450;
-  --secondary-color: #fd7450;
+  --secondary-color: #0A0D54;
+  --third-color: #F8A45B;
   --brand-light: #edf5f7;
   --font-light: #999;
   --font-hind: "Hind", sans-serif;
@@ -25,8 +26,9 @@ body {
   --font-bodoni: "Bodoni Moda", serif;
   --font-playfair: "Playfair Display", serif;
   --font-work: "Work Sans", sans-serif;
+  --font-outfit: "Outfit", sans-serif;
   --para: 14px;
-  --para-heading: 17px;
+  --para-heading: 16px;
   --section-heading: 20px;
   --sub-heading: 28px;
   --heading: 38px;
@@ -55,37 +57,31 @@ body {
 }
 h1 {
   font-size: var(--extra-heading);
-  font-family: var(--font-playfair);
   color: #000;
 }
 
 h2 {
   font-size: var(--heading);
   color: #000;
-  font-family: var(--font-playfair);
 }
 
 h3 {
   font-size: var(--sub-heading);
   color: #000;
-  font-family: var(--font-playfair);
 }
 
 h4 {
   font-size: var(--section-heading);
   color: #000;
-  font-family: var(--font-playfair);
 }
 
 h5 {
   font-size: var(--para-heading);
-  font-family: var(--font-playfair);
   color: #000;
 }
 
 p {
   font-size: var(--para);
-  font-family: var(--font-work);
   margin-bottom: 0;
   font-weight: 400;
   color: #222;
@@ -116,31 +112,36 @@ a {
 .section-header {
   display: flex;
   flex-direction: column;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
   position: relative;
   text-align: left;
   align-items: flex-start;
+}
+.section-header h2 {
+  font-family: var(--font-playfair);
+  font-size: var(--heading);
 }
 
 .section-center-header {
   text-align: center;
   margin-bottom: 60px;
 }
+.section-center-header h2 {
+  font-family: var(--font-playfair);
+  font-size: var(--heading);
+}
 
 .badge-sub, .badge-sub-purple {
   color: var(--primary-color);
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-size: 0.85rem;
-  margin-bottom: 10px;
-  display: block;
-  background-color: #ebe5fa;
+  font-family: var(--font-outfit);
+  font-weight: 500;
+  font-size: var(--para-heading);
+  text-transform: capitalize;
+  background: #f5efff;
   display: inline-block;
   padding: 6px 15px;
   border-radius: 6px;
-  font-size: 16px;
-  font-family: var(--font-work);
+  margin-bottom: 10px;
 }
 .badge-sub-purple {
   color: #8c52ff;
@@ -163,10 +164,10 @@ a {
   align-items: center;
   justify-content: center;
   vertical-align: middle;
-  background-color: var(--brand-color-1);
-  border: 1px solid var(--brand-color-1);
-  font-size: 15px;
-  font-weight: 300;
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  font-size: var(--para-heading);
+  font-family: var(--font-outfit);
   border-radius: 0px;
   transition: all 500ms ease;
   text-decoration: none;
@@ -181,9 +182,9 @@ a {
   margin-left: 10px;
 }
 .main-button:hover {
-  background-color: var(--brand-color-2);
-  color: #000;
-  border-color: var(--brand-color-2);
+  background-color: var(--secondary-color);
+  color: #fff;
+  border-color: var(--secondary-color);
 }
 @media (max-width: 560px) {
   .main-button {
@@ -199,10 +200,10 @@ a {
   align-items: center;
   justify-content: center;
   vertical-align: middle;
-  background-color: var(--brand-color-2);
-  border: 1px solid var(--brand-color-2);
-  font-size: 15px;
-  font-weight: 300;
+  background-color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  font-size: var(--para-heading);
+  font-family: var(--font-outfit);
   border-radius: 0px;
   transition: all 500ms ease;
   text-decoration: none;
@@ -214,9 +215,9 @@ a {
   border-radius: 5px;
 }
 .alternate-button:hover {
-  background-color: var(--brand-color-1);
+  background-color: var(--primary-color);
   color: #fff;
-  border: 1px solid var(--brand-color-2);
+  border: 1px solid var(--primary-color);
 }
 .alternate-button span {
   margin-left: 10px;

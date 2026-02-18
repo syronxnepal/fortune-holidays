@@ -37,7 +37,7 @@ button {
    4. Hero Section
    ========================================= */
 .hero {
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -55,12 +55,12 @@ button {
   line-height: 1.1;
   margin-bottom: 30px;
   color: #fff;
+  font-family: var(--font-playfair);
 }
 
 .search-pill-container {
   box-shadow: var(--pill-shadow);
   max-width: 900px;
-  width: 95%;
   background-color: #FFFFFF !important;
   font-size: 14px;
   font-weight: 500;
@@ -91,21 +91,23 @@ button {
   text-align: left;
 }
 .search-pill .pill-input label {
-  font-size: 0.75rem;
+  font-size: var(--para);
   font-weight: 700;
-  color: var(--dark);
-  text-transform: uppercase;
+  text-transform: capitalize;
   letter-spacing: 0.5px;
   margin-bottom: 2px;
+  font-family: var(--font-outfit);
 }
 .search-pill .pill-input input,
 .search-pill .pill-input select {
+  font-size: var(--para);
   border: none;
   outline: none;
   font-size: 0.95rem;
   color: #666;
   background: transparent;
   width: 100%;
+  font-family: var(--font-work);
 }
 
 .divider {
@@ -116,12 +118,13 @@ button {
 
 .btn-pill-search {
   background: var(--primary-color);
-  color: var(--white);
+  color: #fff;
   padding: 18px 35px;
   border-radius: 50px;
-  font-weight: 600;
-  font-size: 1rem;
   white-space: nowrap;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-family: var(--font-outfit);
 }
 .btn-pill-search:hover {
   opacity: 0.9;
@@ -132,15 +135,16 @@ button {
    ========================================= */
 .hero-banner-outer {
   position: relative;
+  height: calc(100vh - var(--header-height));
 }
 
 .hero-banner {
   position: absolute;
-  height: 100%;
   width: 100%;
+  z-index: 1;
+  height: 100%;
   left: 0;
   top: 0;
-  z-index: 1;
 }
 .hero-banner img {
   height: 100%;
@@ -237,6 +241,9 @@ button {
    ========================================= */
 .section-opportunity {
   padding-top: 50px;
+  background-image: url("../images/about-bf.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .opportunity-container {
@@ -248,12 +255,15 @@ button {
 
 .opportunity-img img {
   border-radius: 50% 50% 20px 20px;
-  max-height: 600px;
+  height: 500px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
+.opportunity-content .section-header {
+  margin-bottom: 30px;
+}
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -272,6 +282,7 @@ button {
   font-size: 1.5rem;
   color: var(--dark);
   margin-bottom: 5px;
+  font-family: var(--font-outfit);
 }
 
 .stat-icon {
@@ -283,7 +294,7 @@ button {
   align-items: center;
   justify-content: center;
   font-size: 1.2rem;
-  color: var(--white);
+  color: #fff;
 }
 .stat-icon.purple {
   background: #6C5CE7;
@@ -321,6 +332,13 @@ button {
 /* =========================================
    7. Featured Tours
    ========================================= */
+.section-tours {
+  background-color: #f6f4fa;
+}
+.section-tours .badge-sub {
+  background-color: #fff;
+}
+
 .tours-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -328,7 +346,7 @@ button {
 }
 
 .tour-item {
-  background: var(--white);
+  background: #fff;
   border-radius: 15px;
   overflow: hidden;
   box-shadow: var(--card-shadow);
@@ -351,7 +369,7 @@ button {
   left: 20px;
   padding: 5px 15px;
   border-radius: 5px;
-  color: var(--white);
+  color: #fff;
   font-size: 0.8rem;
   font-weight: 600;
 }
@@ -389,9 +407,19 @@ button {
 .tour-item .tour-body .tour-meta {
   display: flex;
   gap: 20px;
-  font-size: 0.85rem;
-  color: #888;
+  color: #353844;
   margin-bottom: 15px;
+  color: #353844;
+  font-size: 15px;
+}
+.tour-item .tour-body .tour-location {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+  color: #353844;
+  padding-bottom: 15px;
+  font-size: 15px;
 }
 .tour-item .tour-body .tour-price-row {
   display: flex;
@@ -401,73 +429,74 @@ button {
   border-top: 1px solid #eee;
 }
 .tour-item .tour-body .tour-price-row .price {
-  color: #666;
-  font-size: 0.9rem;
+  color: #353844;
+  font-family: var(--font-outfit);
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 6px;
+       column-gap: 6px;
 }
 .tour-item .tour-body .tour-price-row .price strong {
   font-size: 1.2rem;
   color: var(--primary-color);
 }
-.tour-item .tour-body .tour-price-row .btn-link {
-  color: var(--primary-color);
-  font-weight: 500;
-  font-size: 0.9rem;
+.tour-item .tour-body .tour-price-row .tour-btn-link {
+  font-size: 14px;
+  color: var(--secondary-color);
+  border-radius: 6px;
+  padding: 10px 15px;
+  background: #f0e9ff;
+  display: inline-block;
+  transition: all 0.4s ease;
+  text-transform: capitalize;
+  font-family: var(--font-outfit);
 }
 
-/* =========================================
-   8. Discount & Process
-   ========================================= */
-.section-discount {
-  padding: 50px 0;
-}
-
-.discount-box {
-  background: url("https://placehold.co/1200x400/2D31FA/FFFFFF/png?text=Gradient+Map") center/cover;
-  background-color: var(--secondary);
-  border-radius: 30px;
-  padding: 60px 80px;
+.how-it-works .container .process-container {
   display: flex;
+  -moz-column-gap: 26px;
+       column-gap: 26px;
+  flex-wrap: wrap;
+  row-gap: 15px;
+}
+.how-it-works .container .process-container > div {
+  flex-basis: calc(33% - 14px);
+  height: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.how-it-works .container .process-container .image-box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.how-it-works .container .process-container .info-box {
+  background-color: #f6f4fa;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
   align-items: center;
-  justify-content: space-between;
-  color: var(--white);
-  position: relative;
-  overflow: hidden;
-}
-.discount-box h2 {
-  font-size: 3rem;
-  color: var(--white);
-}
-.discount-box .highlight {
-  color: #FFD700;
-}
-.discount-box .btn-white {
-  background: var(--white);
-  color: var(--primary-color);
-  padding: 15px 40px;
-  border-radius: 50px;
-  font-weight: 700;
-  font-size: 1.1rem;
-}
-
-.process-steps {
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
+  justify-content: center;
   text-align: center;
+  padding: 20px 40px;
 }
-.process-steps .step-icon {
-  width: 100px;
-  height: 100px;
-  margin: 0 auto 20px;
-  border-radius: 50%;
-  overflow: hidden;
+.how-it-works .container .process-container .info-box .icon {
+  font-size: 64px;
+  color: var(--primary-color);
 }
-
+.how-it-works .container .process-container .info-box .info {
+  margin-top: 20px;
+}
+.how-it-works .container .process-container .info-box .info h4 {
+  margin-bottom: 10px;
+  font-family: var(--font-outfit);
+}
 /* =========================================
    9. Testimonials (Purple)
    ========================================= */
 .section-testimonials {
-  background: #6C5CE7;
+  background: var(--secondary-color);
   color: var(--white);
   text-align: center;
   position: relative;
@@ -477,7 +506,7 @@ button {
   margin: 0 auto;
 }
 .section-testimonials .testimonial-content .quote-icon {
-  font-size: 3rem;
+  font-size: 72px;
   opacity: 0.5;
   margin-bottom: 30px;
 }
@@ -496,19 +525,28 @@ button {
   border: 2px solid transparent;
 }
 .section-testimonials .testimonial-content .avatars-testi img.main-avatar {
-  width: 80px;
-  height: 80px;
+  width: 120px;
+  height: 120px;
   opacity: 1;
-  border-color: var(--white);
+  border-color: #fff;
+}
+.section-testimonials .testimonial-content h3 {
+  font-family: var(--font-outfit);
+  color: #fff;
+}
+.section-testimonials .testimonial-content .role {
+  font-family: var(--font-outfit);
+  color: #fff;
 }
 .section-testimonials .testimonial-content .stars {
   color: #FFD700;
   margin: 10px 0 20px;
 }
 .section-testimonials .testimonial-content .testi-text {
-  font-size: 1.5rem;
+  font-size: 16px;
   font-style: italic;
   opacity: 0.9;
+  color: #fff;
 }
 
 /* =========================================
@@ -541,21 +579,24 @@ button {
   position: absolute;
   top: 15px;
   right: 15px;
-  background: var(--secondary);
-  color: var(--white);
+  background: var(--primary-color);
+  color: #fff;
   padding: 5px 10px;
   border-radius: 5px;
   font-size: 0.8rem;
   font-weight: 600;
 }
 .news-item .news-info h3 a {
-  color: var(--dark);
-  font-size: 1.25rem;
-  font-weight: 600;
+  font-size: 19px;
+  font-weight: 500;
   transition: 0.3s;
+  font-family: var(--font-outfit);
 }
 .news-item .news-info h3 a:hover {
   color: var(--primary-color);
+}
+.news-item .meta {
+  font-size: 15px;
 }
 
 /* App Banner */
@@ -599,13 +640,19 @@ button {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 .footer-wrapper .footer-main .footer-logo {
-  color: var(--white);
+  color: #fff;
   font-size: 1.8rem;
   font-weight: 700;
   margin-bottom: 20px;
 }
+.footer-wrapper .footer-main .footer-logo img {
+  width: 150px;
+}
+.footer-wrapper .footer-main p {
+  color: #fff;
+}
 .footer-wrapper .footer-main .footer-col h4 {
-  color: var(--white);
+  color: #fff;
   margin-bottom: 25px;
 }
 .footer-wrapper .footer-main .footer-col ul li {
@@ -614,7 +661,10 @@ button {
 .footer-wrapper .footer-copyright {
   text-align: center;
   padding: 30px 0;
-  font-size: 0.9rem;
+  font-size: 12px;
+}
+.footer-wrapper .footer-copyright p {
+  color: #fff;
 }
 
 /* =========================================

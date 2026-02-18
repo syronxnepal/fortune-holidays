@@ -2,50 +2,55 @@
    3. Header
    ========================================= */
 .header {
-  position: absolute;
   width: 100%;
-  top: 0;
-  left: 0;
   z-index: 100;
   padding: 25px 0;
+  height: var(--header-height);
 
   &-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100%;
+  
   }
 }
 
 .logo {
+  flex-basis: 20%;
   display: flex;
   align-items: center;
   gap: 10px;
   color: var(--white);
   font-size: 1.6rem;
   font-weight: 700;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
   // font-family: var(--font-head);
+  img{
+    left: 0;
+    position: absolute;
+    width: 150px;
+    object-fit: contain;
+    height: auto;
 
-  &-icon {
-    width: 35px;
-    height: 35px;
-    background: var(--white);
-    color: var(--primary-color);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.9rem;
   }
 }
 
+.navbar{
+  flex-basis: 60%;
+
+}
 .nav-links {
   display: flex;
   gap: 35px;
 
   a {
-    color: rgba(255, 255, 255, 0.8);
     font-weight: 500;
-    font-size: 0.95rem;
+    font-family: var(--font-outfit);
+    font-size: var(--para-heading);
 
     &.active,
     &:hover {
@@ -60,7 +65,36 @@
   display: flex;
   align-items: center;
   gap: 20px;
+  flex-basis: 20%;
 
+  .right-box{
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+
+    .icon{
+      height: 50px;
+      width: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--primary-color);
+      border-radius: 50%;
+      color: #fff;
+    }
+    
+    .info-field{
+      .title{
+        font-size: var(--para);
+        font-family: var(--font-outfit);
+        font-weight: 500;
+      }
+      .info{
+        font-size: var(--para);
+      }
+
+    }
+  }
   .search-trigger {
     background: transparent;
     color: var(--white);
@@ -73,11 +107,11 @@
     padding: 12px 25px;
     border-radius: 50px;
     font-weight: 600;
-    font-size: 0.9rem;
     display: flex;
     align-items: center;
     gap: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    font-size: var(--para);
 
     &:hover {
       background: #4738C8;

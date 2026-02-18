@@ -2,37 +2,42 @@
    3. Header
    ========================================= */
 .header {
-  position: absolute;
   width: 100%;
-  top: 0;
-  left: 0;
   z-index: 100;
   padding: 25px 0;
+  height: var(--header-height);
 }
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 100%;
 }
 
 .logo {
+  flex-basis: 20%;
   display: flex;
   align-items: center;
   gap: 10px;
   color: var(--white);
   font-size: 1.6rem;
   font-weight: 700;
-}
-.logo-icon {
-  width: 35px;
-  height: 35px;
-  background: var(--white);
-  color: var(--primary-color);
-  border-radius: 50%;
+  position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: 0.9rem;
+  height: 100%;
+}
+.logo img {
+  left: 0;
+  position: absolute;
+  width: 150px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: auto;
+}
+
+.navbar {
+  flex-basis: 60%;
 }
 
 .nav-links {
@@ -40,9 +45,9 @@
   gap: 35px;
 }
 .nav-links a {
-  color: rgba(255, 255, 255, 0.8);
   font-weight: 500;
-  font-size: 0.95rem;
+  font-family: var(--font-outfit);
+  font-size: var(--para-heading);
 }
 .nav-links a.active, .nav-links a:hover {
   color: var(--white);
@@ -54,6 +59,31 @@
   display: flex;
   align-items: center;
   gap: 20px;
+  flex-basis: 20%;
+}
+.header-actions .right-box {
+  display: flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  align-items: center;
+}
+.header-actions .right-box .icon {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  color: #fff;
+}
+.header-actions .right-box .info-field .title {
+  font-size: var(--para);
+  font-family: var(--font-outfit);
+  font-weight: 500;
+}
+.header-actions .right-box .info-field .info {
+  font-size: var(--para);
 }
 .header-actions .search-trigger {
   background: transparent;
@@ -66,11 +96,11 @@
   padding: 12px 25px;
   border-radius: 50px;
   font-weight: 600;
-  font-size: 0.9rem;
   display: flex;
   align-items: center;
   gap: 8px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  font-size: var(--para);
 }
 .header-actions .btn-login:hover {
   background: #4738C8;
